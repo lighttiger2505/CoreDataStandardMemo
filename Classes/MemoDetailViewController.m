@@ -85,7 +85,7 @@
 	self.titleView.text = [memo valueForKey:@"title"];
 	self.textView.text = [memo valueForKey:@"text"];
 	[textView scrollRangeToVisible:[textView selectedRange]];
-	[self.textView becomeFirstResponder];
+	[self.titleView becomeFirstResponder];
 }
 
 /**

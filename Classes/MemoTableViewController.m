@@ -133,6 +133,7 @@
  */
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
+	// タイトルを表示
     NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
 	NSString *memoTitle = [[managedObject valueForKey:@"title"] description];
     cell.textLabel.text = memoTitle;
